@@ -48,7 +48,7 @@ def chuteLibre(g, x0, y0, vx0, vy0, xorigine, yorigine, echelle):
     x = x0
     y = y0
 
-    # tant qu'on n'est pas retombé par terre...
+    # durée de 5 secondes
     while t < 5:
         t=t+deltaT
         # je n'arrive pas à tracer un point avec Canvas,
@@ -86,7 +86,7 @@ can.pack(side = TOP, padx=10, pady=10)
 # position de l'origine du repère dans la fenêtre, et échelle
 xorigine = 100
 yorigine = 400
-echelle = 20 # un mètre est représenté par "echelle" pixels
+echelle = 10 # un mètre est représenté par "echelle" pixels
 repere(fenHeight, fenWidth, xorigine, yorigine)
 
 # définition des paramètres
